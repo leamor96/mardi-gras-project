@@ -22,7 +22,7 @@ h2 {
   font-family: "Pattaya";
 }
 /* navbar */
-.navbar-expand-lg{
+.navbar-expand-lg {
   z-index: 9;
 }
 .nav-font {
@@ -78,12 +78,22 @@ h2 {
 
 /* responsive trivia btn */
 @media screen and (max-width: 768px) {
-  .fixed-btn{
+  .rounded-button {
+    width: 110px;
+    height: 110px;
+  }
+  .fixed-btn {
+    background: #0d0d0d;
     position: absolute;
-    top: 10%;
+    top: 12%;
     left: 35%;
     z-index: 0;
+    box-shadow: 0 0.6rem 1.6rem 0 #9453a6;
   }
+  .rounded-button:active {
+  background: #0d0d0d;
+  box-shadow: 0 0.4rem 1.4rem 0 #8cbf3f;
+}
 }
 
 /* cards */
