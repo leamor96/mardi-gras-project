@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+body {
+  background-color: #f2f2f2;
+}
+text,
+p {
+  font-family: "Roboto", sans-serif;
+  color: #0d0d0d;
+}
+
+.content h1,
+h2 {
+  font-family: "Pattaya";
+  color: #9453a6;
+}
+
+.noBorder {
+  border: none;
+}
+.btn-dark {
+  font-family: "Pattaya";
+}
+/* navbar */
+.navbar-expand-lg{
+  z-index: 9;
+}
+.nav-font {
+  font-family: "Henny Penny";
+  font-size: 1.5em;
+}
+
+.nav-color div ul li a {
+  color: #f2f2f2;
+}
+
+.nav-color div ul li a:hover,
+.active:hover {
+  color: #9453a6;
+}
+/*carousel*/
+.carousel-caption {
+  font-family: "Henny Penny";
+}
+/* trivia quiz button */
+.rounded-button {
+  width: 100px;
+  height: 100px;
+  background: #9453a6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0.4rem double;
+  border-color: #f2f2f2;
+  transition: background 0.2s;
+}
+.rounded-button a {
+  font-size: 1.2rem;
+  font-family: "Henny Penny";
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rounded-button:hover {
+  background: #8cbf3f;
+  box-shadow: 0 0.4rem 1.4rem 0 #8cbf3f;
+}
+.fixed-btn {
+  z-index: 9;
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+  box-shadow: 0 0.4rem 1.4rem 0 #9453a6;
+}
+
+/* responsive trivia btn */
+@media screen and (max-width: 768px) {
+  .fixed-btn{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 0;
+  }
+}
+
+/* cards */
+
+.cardStyle {
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 1;
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+.cardStyle:hover {
+  transform: scale(1.05);
+}
+
+.cardStyle h5 {
+  font-family: "Henny Penny";
+  color: #8cbf3f;
+  font-weight: bold;
+}
+.cardStyle p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* about page */
+.mayor-img {
+  width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+}
+/* gallery */
+.g-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  transition: transform 0.2s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* video */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* media page end */
+
+/* /* FAQ */
+.accordion-container h1 {
+  font-family: "Henny Penny";
+  color: #8cbf3f;
+  text-align: center;
+}
+.accordion-header button:focus-within {
+  color: #8cbf3f !important;
+  background-color: #242424 !important;
+}
+
+/* FAQ end*/
+*/
+
+/* contact validation */
+.invalid-feedback {
+  color: red;
+  box-shadow: 1px 1px 1px gray;
+}
+.hidden {
+  display: none;
+}
+
+/* footer */
+.bg-black {
+  background-color: #0d0d0d !important;
+}
